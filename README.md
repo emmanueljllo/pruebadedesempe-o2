@@ -40,8 +40,9 @@ It includes animations, transitions, responsive layouts with Flexbox and CSS Gri
 ## Contact
 
 **Name:** Emmanuel Jaramillo  
-**Email:** your-email@example.com  
-**Clan:** (Your clan if needed)
+**Email:** emmanueljaramill@gmail.com 
+**Clan:** (Van rossum)
+317 0924695
 
 ---
 
