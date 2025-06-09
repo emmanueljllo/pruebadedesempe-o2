@@ -1,0 +1,111 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background: #121212;
+color: white;
+}
+
+header, footer {
+background: #d32f2f;
+padding: 20px;
+text-align: center;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: #ffccbc;
+}
+
+main {
+padding: 20px;
+text-align: center;
+}
+
+.intro, .presentacion, .contacto {
+padding: 20px;
+animation: aparecer 1.5s ease;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+max-width: 400px;
+margin: 0 auto;
+}
+
+input, textarea, button {
+padding: 10px;
+border: none;
+border-radius: 5px;
+}
+
+button {
+background: #1976d2;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+background: #1565c0;
+}
+
+.portafolio-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+gap: 10px;
+padding: 20px;
+}
+
+.card {
+background: #1e1e1e;
+padding: 20px;
+border-radius: 10px;
+transition: transform 0.3s;
+}
+
+.card:hover {
+background: #333;
+transform: scale(1.05);
+}
+
+@keyframes aparecer {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@media (max-width: 768px) {
+nav ul {
+    flex-direction: column;
+}
+}
+
+@media (max-width: 480px) {
+.portafolio-grid {
+    grid-template-columns: 1fr;
+}
+}
